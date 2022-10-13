@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import *
 
 
 class DlgMain(QDialog):
-    def __init__(self):
+    def __init__(self):          #конструктор
         super().__init__()
         self.setWindowTitle('GUI')
         self.resize(300, 200)
