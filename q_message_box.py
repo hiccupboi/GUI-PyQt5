@@ -13,16 +13,16 @@ class DlgMain(QDialog):
 
 
     def evt_btn_clicked(self):
-        res = QMessageBox.information(self, 'Have a nice day', 'good day for coffee')
-        if res == QMessageBox.Ok:
-            QMessageBox.information(self, ' ', 'I went to make coffee')
-        # msgDiskFull = QMessageBox()
-        # msgDiskFull.setText('Your hard drive is almost full')
-        # msgDiskFull.setDetailedText('Please free up disk space')
-        # msgDiskFull.seticon(QMessageBox.Information)
-        # msgDiskFull.setWindowTitle('Full Drive')
-        # msgDiskFull.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
-        # msgDiskFull.exec_()
+        # res = QMessageBox.information(self, 'Have a nice day', 'good day for coffee')
+        # if res == QMessageBox.Ok:
+        #     QMessageBox.information(self, ' ', 'I went to make coffee')
+        msgDiskFull = QMessageBox()
+        msgDiskFull.setText('Your hard drive is almost full')
+        msgDiskFull.setDetailedText('Please free up disk space')
+        msgDiskFull.setIcon(QMessageBox.Information)
+        msgDiskFull.setWindowTitle('Full Drive')
+        msgDiskFull.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
+        msgDiskFull.exec_()
 
 
 
